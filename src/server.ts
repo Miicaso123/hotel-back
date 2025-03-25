@@ -7,7 +7,9 @@ import express, { Request, Response } from 'express';
 import fs from 'fs';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
